@@ -26,11 +26,16 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+    buildFeatures{
+        dataBinding=true
+    }
 }
 
 dependencies {
 
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
     implementation (libs.retrofit)
     implementation(libs.appcompat)
     implementation(libs.material)
