@@ -36,6 +36,7 @@ dependencies {
 
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.2.0-alpha01")
+    implementation ("com.github.bumptech.glide:glide:4.16.0")
     implementation (libs.retrofit)
     implementation(libs.appcompat)
     implementation(libs.material)
@@ -44,4 +45,5 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
 }
